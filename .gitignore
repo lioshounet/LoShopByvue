@@ -21,3 +21,10 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+public/img/总图库
+public/img/*.psd
+public/img/*/*.psd
+public/img/*/*/*.psd
+public/img/*/*/*/*.psd
+

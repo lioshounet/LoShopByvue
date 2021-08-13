@@ -1,13 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="left_box">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
-    <router-view/>
+    <div class="right_box">
+      <img src="../public/img/main/best_sell/小熊你好.png" alt="" />
+    </div>
   </div>
 </template>
 
+<style>
+@import "../public/css/base.css";
+@import "../public/css/app.css";
+</style>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
