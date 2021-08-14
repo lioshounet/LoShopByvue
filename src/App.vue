@@ -1,19 +1,16 @@
 <template>
-  <div id="app">
+  <div id="app" class="main">
     <div class="left_box">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <List></List>
     </div>
     <div class="right_box">
-      <img src="../public/img/main/best_sell/小熊你好.png" alt="" />
+      <div class="top">
+        <img
+          src="../public/img/main/best_sell/小熊你好.png"
+          alt=""
+          width="980px"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -21,8 +18,7 @@
 <style>
 @import "../public/css/base.css";
 @import "../public/css/app.css";
-</style>
-<style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,3 +40,10 @@
   color: #42b983;
 }
 </style>
+
+<script>
+import List from "./components/List";
+export default {
+  components: { List },
+};
+</script>

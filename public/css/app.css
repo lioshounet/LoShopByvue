@@ -1,0 +1,22 @@
+.main {
+    width: 1200px;
+    height: 1080px;
+    margin: 20px auto;
+}
+
+.left_box {
+    /* display: inline-block; */
+    float: left;
+    width: 200px;
+    height: 1080px;
+    margin-right: 10px;
+    background-color: rgb(255, 38, 0);
+}
+
+.right_box {
+    /* display: inline-block; */
+    float: right;
+    width: 980px;
+    height: 1080px;
+    background-color: rgb(255, 60, 0);
+}
