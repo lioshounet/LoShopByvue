@@ -239,7 +239,7 @@
   </div>
 </template>
 <style>
-@import "../../public/css/Miss_Jane.css";
+@import "../../public/css/goods.css";
 </style>
 <script>
 import Msg from "./msg.js";
