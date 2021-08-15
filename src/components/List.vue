@@ -2,7 +2,7 @@
   <div class="list">
     <div class="til">种类</div>
     <ul>
-      <li>123</li>
+      <li>珍妮小姐</li>
       <li>456</li>
       <li>789</li>
       <li>123</li>
