@@ -11,6 +11,7 @@
           width="980px"
         />
       </div>
+      <MissJane></MissJane>
     </div>
   </div>
 </template>
@@ -43,7 +44,9 @@
 
 <script>
 import List from "./components/List";
+import MissJane from "./components/Miss_Jane";
+
 export default {
-  components: { List },
+  components: { List, MissJane },
 };
 </script>
