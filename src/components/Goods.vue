@@ -1,121 +1,10 @@
 <template>
   <div>
-    <div class="goods" v-if="xi == 'missjane'">
-      <div class="til"><p>货架</p></div>
-      <div class="sheet">
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
+    <div class="goods" v-if="xi == 'missjane' || xi == ''">
+      <div class="til">
+        <p>货架</p>
       </div>
-      <div class="sheet">
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-      </div>
-      <div class="sheet">
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-        <div class="good">
-          <img
-            src="../../public/img/goods/【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古.png"
-            alt=""
-            width="225px"
-          />
-          <p>【现货】Sugar-Teatime 珍妮小姐 OP国牌原创lolita复古</p>
-          <p>$555</p>
-        </div>
-      </div>
+      <missjane></missjane>
     </div>
     <div class="goods" v-if="xi == 'autumnforest'">
       <div>
@@ -242,10 +131,11 @@
 @import "../../public/css/goods.css";
 </style>
 <script>
+import missjane from "./sheets/missjane_sheets.vue";
 import Msg from "./msg.js";
 export default {
   // name: "DollMissJane",
-  // components: { ComponentName },
+  components: { missjane },
 
   // directives: { DirectiveName },
 
