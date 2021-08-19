@@ -16,5 +16,6 @@
     border-bottom: 2px solid rgba(221, 190, 169, 0.712);
     margin: auto;
     color: rgb(203, 153, 126);
+    cursor: pointer;
     background-color: rgb(255, 232, 214);
 }

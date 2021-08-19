@@ -26,11 +26,11 @@
     display: inline-block;
     border-radius: 25px;
     margin-top: 12px;
-    margin-left: 26px;
+    margin-right: 20px;
     background-color: rgb(221, 190, 169);
 }
 
-.goods .sheet .good:nth-child(1) {
+.goods .sheet .good:nth-child(4n) {
     margin-left: 0px;
 }
 

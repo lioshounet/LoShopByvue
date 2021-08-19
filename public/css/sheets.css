@@ -1,0 +1,33 @@
+/* .sheet {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: rgb(255, 232, 214);
+} */
+
+.good {
+    width: 225px;
+    height: 275px;
+    display: inline-block;
+    border-radius: 25px;
+    /* margin-top: 12px; */
+    margin-right: 26px;
+    background-color: rgb(221, 190, 169);
+}
+
+/* .good:nth-child(1) {
+    margin-left: 0px;
+} */
+
+.good img {
+    width: 225px;
+    height: 225px;
+    border-radius: 25px 25px 0 0;
+}
+
+.good p {
+    /* width: 100%; */
+    /* line-height: 20px; */
+    font-size: 15px;
+    color: rgb(75, 78, 65);
+}

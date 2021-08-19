@@ -11,7 +11,7 @@
           width="980px"
         />
       </div>
-      <MissJane></MissJane>
+      <Goods></Goods>
     </div>
   </div>
 </template>
@@ -44,9 +44,9 @@
 
 <script>
 import List from "./components/List";
-import MissJane from "./components/Miss_Jane";
+import Goods from "./components/Goods";
 
 export default {
-  components: { List, MissJane },
+  components: { List, Goods },
 };
 </script>
