@@ -22,7 +22,7 @@
       <div class="til">
         <p>货架</p>
       </div>
-      <autumnforest></autumnforest>
+      <arconasdream></arconasdream>
     </div>
     <div class="goods" v-if="xi == 'badoni'">
       <div class="til">
