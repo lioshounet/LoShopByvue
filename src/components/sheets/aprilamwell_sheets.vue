@@ -15,7 +15,7 @@ export default {
   name: "sheet",
   data() {
     var _this = this;
-    this.$http.get("json/good_missjane.json").then(function (res) {
+    this.$http.get("json/good_aprilamwell.json").then(function (res) {
       _this.list = res.data;
     });
     // console.log(list);
