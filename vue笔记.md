@@ -264,5 +264,78 @@
     };
     ```
 
-    
+- json数据的使用（http，axios）
 
+   - 在脚手架里面安装axios
+
+      ```bash
+      npm i axios -S
+      ```
+      - 安装成功之后
+
+         在package.json中会有这么一行
+
+         ```json
+          "dependencies": {
+             "axios": "^0.21.1",
+             "core-js": "^3.6.5",
+             "vue": "^2.6.11",
+             "vue-router": "^3.2.0"
+           },
+         ```
+
+   - 在main.js中写入
+
+     - ```javascript
+       import router from './router'
+       Vue.prototype.$http = axios
+       ```
+
+   - 在public文件夹里面新建json文件夹
+
+      - 在里面写入json
+
+      - ```json
+         [
+             {
+                 "goodName": "【小物】阿尔可纳之梦-头饰蝴蝶结.png",
+                 "img": "img/goods/【小物】阿尔可纳之梦-头饰蝴蝶结.png"
+             },
+             {
+                 "goodName": "【小物】阿尔可纳之梦-头饰蝴蝶结.png",
+                 "img": "img/goods/【小物】阿尔可纳之梦-头饰蝴蝶结.png"
+             }
+         ]
+         ```
+
+   - 使用axios引用json的数据
+
+      ```vue
+      <template>
+        <div class="sheet" name="sheet">
+          <div class="good" v-for="good in list">
+            <img v-bind:src="good.img" alt="" />
+            <p>{{ good.goodName }}</p>
+          </div>
+        </div>
+      </template>
+      <style>
+      @import "../../../public/css/sheets.css";
+      </style>
+      <script>
+      export default {
+        name: "sheet",
+        data() {
+          var _this = this;
+          this.$http.get("json/good_anthonycake.json").then(function (res) {
+            _this.list = res.data;
+          });
+          return {
+            list: [],
+          };
+        },
+      };
+      </script>
+      ```
+
+      
