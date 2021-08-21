@@ -1,5 +1,6 @@
 <template>
   <div class="list">
+    <!-- 修改标志 -->
     <div class="til">种类</div>
     <ul>
       <li @click="missjane()">珍妮小姐</li>
