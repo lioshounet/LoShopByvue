@@ -4,61 +4,61 @@
       <div class="til">
         <p>货架</p>
       </div>
-      <missjane></missjane>
+      <sheets :goodId="'missjane'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'autumnforest'">
       <div class="til">
         <p>货架</p>
       </div>
-      <autumnforest></autumnforest>
+      <sheets :goodId="'autumnforest'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'honeyhoney'">
       <div class="til">
         <p>货架</p>
       </div>
-      <honeyhoney></honeyhoney>
+      <sheets :goodId="'honeyhoney'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'arconasdream'">
       <div class="til">
         <p>货架</p>
       </div>
-      <arconasdream></arconasdream>
+      <sheets :goodId="'arconasdream'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'badoni'">
       <div class="til">
         <p>货架</p>
       </div>
-      <badoni></badoni>
+      <sheets :goodId="'badoni'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'brokendoll'">
       <div class="til">
         <p>货架</p>
       </div>
-      <brokendoll></brokendoll>
+      <sheets :goodId="'brokendoll'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'pandabamboo'">
       <div class="til">
         <p>货架</p>
       </div>
-      <pandabamboo></pandabamboo>
+      <sheets :goodId="'pandabamboo'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'anthonycake'">
       <div class="til">
         <p>货架</p>
       </div>
-      <anthonycake></anthonycake>
+      <sheets :goodId="'anthonycake'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'aprilamwell'">
       <div class="til">
         <p>货架</p>
       </div>
-      <aprilamwell></aprilamwell>
+      <sheets :goodId="'aprilamwell'"></sheets>
     </div>
     <div class="goods" v-if="xi == 'lancelot'">
       <div class="til">
         <p>货架</p>
       </div>
-      <lancelot></lancelot>
+      <sheets :goodId="'lancelot'"></sheets>
     </div>
   </div>
 </template>
@@ -66,30 +66,32 @@
 @import "../../public/css/goods.css";
 </style>
 <script>
-import missjane from "./sheets/missjane_sheets.vue";
-import autumnforest from "./sheets/autumnforest_sheets.vue";
-import honeyhoney from "./sheets/honeyhoney_sheets.vue";
-import arconasdream from "./sheets/arconasdream_sheets.vue";
-import badoni from "./sheets/badoni_sheets.vue";
-import brokendoll from "./sheets/brokendoll_sheets.vue";
-import pandabamboo from "./sheets/pandabamboo_sheets.vue";
-import anthonycake from "./sheets/anthonycake_sheets.vue";
-import aprilamwell from "./sheets/aprilamwell_sheets.vue";
-import lancelot from "./sheets/lancelot_sheets.vue";
+import sheets from "./sheets/sheets.vue";
+// import missjane from "./sheets/missjane_sheets.vue";
+// import autumnforest from "./sheets/autumnforest_sheets.vue";
+// import honeyhoney from "./sheets/honeyhoney_sheets.vue";
+// import arconasdream from "./sheets/arconasdream_sheets.vue";
+// import badoni from "./sheets/badoni_sheets.vue";
+// import brokendoll from "./sheets/brokendoll_sheets.vue";
+// import pandabamboo from "./sheets/pandabamboo_sheets.vue";
+// import anthonycake from "./sheets/anthonycake_sheets.vue";
+// import aprilamwell from "./sheets/aprilamwell_sheets.vue";
+// import lancelot from "./sheets/lancelot_sheets.vue";
 import Msg from "./msg.js";
 export default {
   // name: "DollMissJane",
   components: {
-    missjane,
-    autumnforest,
-    honeyhoney,
-    arconasdream,
-    badoni,
-    brokendoll,
-    pandabamboo,
-    anthonycake,
-    aprilamwell,
-    lancelot,
+    sheets,
+    // missjane,
+    // autumnforest,
+    // honeyhoney,
+    // arconasdream,
+    // badoni,
+    // brokendoll,
+    // pandabamboo,
+    // anthonycake,
+    // aprilamwell,
+    // lancelot,
   },
 
   // directives: { DirectiveName },
