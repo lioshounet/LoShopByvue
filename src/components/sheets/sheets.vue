@@ -15,13 +15,34 @@ export default {
   name: "sheet",
   data() {
     var _this = this;
-    this.$http.get("json/good_arconasdream.json").then(function (res) {
+    var url = "";
+    // url = "json/good_anthonycake.json";
+    url = "json/good_" + _this.goodId + ".json";
+    this.$http.get(url).then(function (res) {
       _this.list = res.data;
     });
     // console.log(list);
     return {
       list: [],
     };
+  },
+  props: {
+    goodId: String,
+  },
+
+  watch: {
+    goodId() {
+      var _this = this;
+      var url = "";
+      url = "json/good_" + _this.goodId + ".json";
+      this.$http.get(url).then(function (res) {
+        _this.list = res.data;
+      });
+
+      return {
+        list: [],
+      };
+    },
   },
 
   mounted() {},
